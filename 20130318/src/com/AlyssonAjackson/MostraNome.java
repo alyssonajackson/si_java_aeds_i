@@ -1,6 +1,5 @@
 package com.AlyssonAjackson;
 
-import java.io.*;
 import javax.swing.JOptionPane;
 
 public class MostraNome {
