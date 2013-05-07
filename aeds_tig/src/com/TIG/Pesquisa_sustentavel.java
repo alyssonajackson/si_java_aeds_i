@@ -20,6 +20,7 @@ public class Pesquisa_sustentavel {
 			//por sexo
 
 			sexo = JOptionPane.showInputDialog("Qual o seu sexo? (feminino = f, masculino = m)");
+
 			if(sexo.equals("f")){
 				cont_por_sexo[0]++;
 			}else{
@@ -47,18 +48,17 @@ public class Pesquisa_sustentavel {
 				categorias[categoria]++;
 			}
 			
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você separa o lixo da sua casa? (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você tem reaproveitado a água da sua casa? (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você usa algum tipo de energia sustentável como por exemplo (solar ou eólica)? (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você joga lixo no chão? (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você sabe como deve descartar o lixo eletrônico (celulares,computadores,baterias,pilhas etc)? (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você já ouviu falar sobre o processo de coleta seletiva de lixo da sua cidade? (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você reaproveita sacola plástica como saco de lixo? (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você reutiliza óleo de cozinha? (ex: para fabricar sabão) (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você utiliza resto de matéria orgânica para adubação? (1 = sim, 2 = não)")) == 1) cont_sim++;
-			if(Integer.parseInt(JOptionPane.showInputDialog("Você reaproveita água de chuva para lavar o quintal? (1 = sim, 2 = não)")) == 1) cont_sim++;			
-			
-			
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você separa o lixo da sua casa? \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você tem reaproveitado a água da sua casa? \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você usa algum tipo de energia sustentável como por exemplo (solar ou eólica)? \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você sempre joga lixo no lugar apropriado para o mesmo? \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você sabe como deve descartar o lixo eletrônico (celulares,computadores,baterias,pilhas etc)? \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você já ouviu falar sobre o processo de coleta seletiva de lixo da sua cidade? \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você reaproveita sacola plástica como saco de lixo? \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você reutiliza óleo de cozinha? (ex: para fabricar sabão) \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você utiliza resto de matéria orgânica para adubação? \n (1 = sim, 2 = não)")) == 1) cont_sim++;
+			if(Integer.parseInt(JOptionPane.showInputDialog("Você reaproveita água de chuva para lavar o quintal? \n (1 = sim, 2 = não)")) == 1) cont_sim++;			
+
 			//resposta para o usuário sobre sua relação com a natureza ou sustentabilidade
 			if(cont_sim > 8){
 				JOptionPane.showMessageDialog(null, "Parabéns você é um grande amigo da natureza!");
